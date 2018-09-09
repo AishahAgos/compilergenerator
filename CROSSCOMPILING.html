@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>	
+<head>
+<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+<title>Cross Compiling Generator</title>
+
+</head>
+<body bgcolor="#0E6655">
+<br><br>
+	<center><font size ="15" color="white">CROSS COMPILING</font></center>
+   <center><font size ="12" color="white">Generator</font></center>
+	<br>
+	<br>
+<form style="background-color: #A2D9CE; border :3px solid white;" width=50% align="center" >
+
+<br><br>    
+
+   <center>
+   <table border="0" >
+   <tr>
+      <td colspan = "5" align="center"><strong>Want</strong></td>
+      <td colspan = "5" align="center"><strong>Have</strong></td>
+      <td colspan = "5" align="center"><strong>Write</strong></td>
+   </tr>    
+   <tr>
+      <td></td>
+      <td><input type="text" id="inputWant" size=5></td>
+      <td>&#8594;</td>
+      <td><input type="text" id="objWant" size=5></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td></td>
+      <td><input type="text" id="inputHave" size=5></td>
+      <td>&#8594;</td>
+      <td><input type="text" id="objHave" size=5></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td></td>
+      <td><input type="text" id="inputWrite" size=5></td>
+      <td>&#8594;</td>
+      <td><input type="text" id="objWrite" size=5></td>
+   </tr>
+   <tr>
+      <td><font size="20">C</td><td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td></td>
+      <td><font size="20">C</td>
+      <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td></td>
+      <td><font size="20">C</td>
+   </tr>
+   <tr>
+      <td></td>
+      <td><input type="text" id="compWant" size=5></td>
+      <td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td><input type="text" id="compHave" size=5></td>
+      <td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td><input type="text" id="compWrite" size=5></td>
+   </tr>
+   </table>
+</center>
+<br><br>
+
+
+<!--
+****************************************************************
+
+Author : Aishah Agos 
+
+****************************************************************
+-->
+
+<center><button type="button" id="genbtn">Generate</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick ="reset()">Reset</button></center>
+
+   <br><br>
+
+   <hr COLOR = "white" SIZE = "3%" width = "100%" >
+   <br><br>
+
+
+<center>
+   <table border="0">
+   <tr>
+   	<td><strong>Step 1</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_inputWrite" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objWrite" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_inputHave" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objHave" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_inputWrite" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objWrite" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   </tr>
+   	<tr>
+   	<td></td>
+   	<td><input type="text" class="out_compWrite" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_compHave" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_objHave" size=5></td>
+   </tr>
+   </table>
+</center>
+
+
+   
+   <br><br>
+   
+<center>
+   <table border="0">
+   <tr>
+   	<td><strong>Step 2</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_inputWrite" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objWrite" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_inputWrite" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objWrite" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_inputWant" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_objWant" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   </tr>
+   	<tr>
+   	<td></td>
+   	<td><input type="text" class="out_compWrite" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_objHave" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_compWant" size=5></td>
+   </tr>
+   </table>
+</center>  
+<br><br> 
+
+</form>
+
+<script type="text/javascript">
+
+$("#genbtn").click(function(){
+   $(".out_inputWant").val($("#inputWant").val());
+   $(".out_objWant").val($("#objWant").val());
+   $(".out_compWant").val($("#compWant").val());
+
+   $(".out_inputHave").val($("#inputHave").val());
+   $(".out_objHave").val($("#objHave").val());
+   $(".out_compHave").val($("#compHave").val());
+
+   $(".out_inputWrite").val($("#inputWrite").val());
+   $(".out_objWrite").val($("#objWrite").val());
+   $(".out_compWrite").val($("#compWrite").val());
+   
+});
+   
+</script>
+</body> 
+</html>
+ 

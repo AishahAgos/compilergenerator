@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>2 Steps Bootstrapping</title>
+
+<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+</head>
+<body bgcolor="#7B241C">
+
+<br><br>
+	<center>
+      <font size ="15" color="white">2 STEPS BOOTSTRAPPING</font><br>
+      <font size ="12" color="white">Generator</font>
+   </center>
+	<br>
+	<br>
+<form style="background-color: #F1948A; border :3px solid white;" width=50% align="center" >
+
+<br><br>    
+<center >
+   <table border="0" width ="40%">
+   <tr >
+   	<td colspan = "4"><strong>Want</strong></td>
+   	<td colspan = "4" align="center"><strong>Subset</strong></td>
+   </tr>
+   <tr>
+   	<td></td>
+   	<td><input type="text" id="in_input" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" id="in_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" id="in_subset1" size=5></td>
+   	<td>&#8250;</td>
+   	<td><input type="text" id="in_subset2" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   </tr>
+   <tr>
+   	<td></td>
+   	<td><input type="text" id="in_comp" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+   </table>
+</center>    
+
+
+   <br><br><br>
+   <center><button type="button" id="genbtn">Generate</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick ="reset()">Reset</button></center>
+
+   <br><br>
+   <hr COLOR = "white" SIZE = "3%" width = "100%" >
+   <br><br>
+
+<center>
+   <table border="0" >
+   <tr>
+   	<td colspan = "5" align="center"><strong>Want</strong></td>
+   	<td colspan = "5" align="center"><strong>Write1</strong></td>
+   	<td colspan = "5" align="center"><strong>Write2</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset2" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td><td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><font size="20">C</td>
+   </tr>
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_subset2" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   </tr>
+   </table>
+</center>
+   
+   <br><br>
+
+<center>
+   <table border="0">
+   <tr>
+   	<td><strong>Step 1</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset2" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   </tr>
+   	<tr>
+   	<td></td>
+   	<td><input type="text" class="out_subset2" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   </tr>
+   </table>
+</center>
+
+
+   <br><br>
+   <hr COLOR = "white" SIZE = "3%" width = "100%" >
+   <br><br>
+
+<center>
+   <table border="0">
+   <tr>
+   	<td colspan = "5" align="center"><strong>Want</strong></td>
+   	<td colspan = "5" align="center"><strong>Write1</strong></td>
+   	<td colspan = "5" align="center"><strong>Write2</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_input" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_input" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td><td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><font size="20">C</td>
+   </tr>
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   </tr>
+   </table>
+</center>
+
+
+
+   <br><br>
+   
+<center>
+   <table border="0">
+   <tr>
+   	<td><strong>Step 2</strong></td>
+   </tr>    
+   <tr>
+   	<td></td>
+   	<td><input type="text" class="out_input" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td></td>
+   	<td><input type="text" class="out_input" size=5></td>
+   	<td>&#8594;</td>
+   	<td><input type="text" class="out_obj" size=5></td>
+   </tr>
+   <tr>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   	<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td>&#8594;</td>
+   	<td><font size="20">C</td>
+   </tr>
+   	<tr>
+   	<td></td>
+   	<td><input type="text" class="out_subset1" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   	<td colspan ="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   	<td><input type="text" class="out_comp" size=5></td>
+   </tr>
+   </table>
+</center>  
+<br><br> 
+
+</form>
+
+<!--
+****************************************************************
+
+Author : Aishah Agos 
+
+****************************************************************
+-->
+
+<script type="text/javascript">
+
+$("#genbtn").click(function(){
+   $(".out_input").val($("#in_input").val());
+   $(".out_obj").val($("#in_obj").val());
+   $(".out_comp").val($("#in_comp").val());
+   $(".out_subset1").val($("#in_subset1").val());
+   $(".out_subset2").val($("#in_subset2").val());
+   
+});
+   
+</script>
+</body> 
+</html>
+ 
